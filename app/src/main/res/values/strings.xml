@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Zohirola</string>
+    <string name="offline_title">No internet connection</string>
+    <string name="offline_text">Check your connection and try again.</string>
+    <string name="retry">Try again</string>
+</resources>

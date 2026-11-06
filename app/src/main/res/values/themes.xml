@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Zohirola" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#D8241E</item>
+        <item name="colorPrimaryDark">#B01C17</item>
+        <item name="colorAccent">#D8241E</item>
+        <item name="android:statusBarColor">#D8241E</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.zohirola.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.zohirola.web"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        def appUrl = project.findProperty("APP_URL") ?: "https://example.com"
+        buildConfigField "String", "APP_URL", "\"${appUrl}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+}
